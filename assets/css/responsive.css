@@ -1,0 +1,243 @@
+:root{
+    --blue-color: #4169e1;
+    --dark: #343a40;
+}
+
+@media only screen and (max-width: 1025px) {
+    head{
+        height: 0;
+    }
+    body {
+        height: 100%;
+        overflow-x: hidden;
+    }
+    .about__content {
+        width: 100%;
+    }
+    .intro__back-color {
+        display: none;
+    }
+    .icon-menu {
+        display: none;
+    }
+    .black-color {
+        display: none;
+    }
+    #intro-section {
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        margin-top: -8px;
+    }
+    .intro__photo {
+        margin-top: 32px;
+        margin-left: 0;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-bottom: 32px;
+        border: 4px solid var(--blue-color);
+    }
+    
+    .intro__inf {
+        width: 68%;
+        text-align: center;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .intro__inf h1 {
+        font-size: 36px;
+        margin-bottom: 8px;
+    }
+    .intro__inf p {
+        max-width: 100%;
+    }
+    .more-btn {
+        max-width: 500px;
+        width: 100%;
+        align-self: center;
+    }
+
+    #menu {
+        display: block;
+        position: fixed;
+        opacity: .6;
+    }
+
+    .experiences__list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .experiences__list__items {
+        margin-left: 88px;
+    }
+    .experiences__list {
+        padding: 0;
+    }
+    .my-skills__lists_row {
+        flex-direction: column;
+    }
+    .menu-window {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .9);
+        
+        z-index: 200;
+    }
+    .menu-window {
+        text-decoration: 0;
+        display: none;
+        padding-top: 28px;
+        animation: slideLeft linear .3s;
+    }
+    .menu-window__options i {
+        width: 30px;
+    }
+    .menu-window__options {
+        height: 80px;
+        display: block;
+        color: white;
+        padding: 32px;
+        font-size: 20px;
+    }
+    .menu-window__options:hover {
+        background-color: rgba(0, 0, 0, 1);
+        color: var(--blue-color);
+    }
+    .open {
+        display: block;
+    }
+
+    .achievement-list_container_row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .achievement-list_items_content,
+    .achievement-list_items {
+        min-width: 280px;
+        min-height: 200px;
+        width: 50vw;
+        height: calc(50vw * 5/7);  
+        padding-bottom: 4px;  
+    }
+    .achievement-list_items_content p {
+        font-size: 16px;
+        margin: 4px 16px;
+    }
+    .contact-content__cointainer {
+        flex-direction: column;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .contact-content__info {
+        margin-bottom: 40px;
+    }
+    
+
+
+
+
+
+    @keyframes slideLeft {
+        from {
+            transform: translateX(-100%)
+        }
+        to {
+            transform: translateX(0)
+        }
+    }
+}  
+
+@media only screen and (max-width: 740px) {
+    .title-subheading {
+        text-align: center;
+        font-size: 28px;
+    }
+    .year{
+        float: none;
+        position: unset;
+    }
+    .experiences__list {
+        margin-left: -28px;
+    }
+    .process-box .text {
+        font-size: 20px;
+    }
+    .job-company {
+        margin-left: 0;
+    }
+    .experiences__list__items,
+    .job-detail {
+        max-width: 70%;
+    }
+    .process-box {
+        margin: 0 -20px;
+    }
+    .achievement-list_items_content p {
+        font-size: 14px;
+    }
+    .name-mail-subject-box {
+        flex-direction: column;
+    }
+    .name-mail-subject-box input {
+        margin: 8px 0;
+    }
+    .name-mail-subject-box {
+        margin-bottom: 8px;
+    }
+    .send-btn-containter {
+        align-self: flex-end;
+    }
+}
+
+/* 
+@media only screen and (max-width: 739px) {
+    .intro_photo {
+        margin-left: 0;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 32px;
+        border: 4px solid var(--blue-color);
+    }
+    head{
+        height: 0;
+    }
+    body {
+        height: 100%;
+    }
+    .intro_back-color {
+        display: none;
+    }
+    .icon-menu {
+        display: none;
+    }
+    #intro {
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        margin-top: -8px;
+    }
+    
+    .intro_inf {
+        text-align: center;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 68%;
+    }
+    .intro_inf h1 {
+        font-size: 32px;
+        margin-bottom: 4px;
+        
+    }
+    .intro_inf p {
+        max-width: 100%;
+    }
+} */
