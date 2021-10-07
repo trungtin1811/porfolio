@@ -162,6 +162,9 @@
         float: none;
         position: unset;
     }
+    .break-line {
+        width: 50%;
+    }
     .experiences__list {
         margin-left: -28px;
     }
