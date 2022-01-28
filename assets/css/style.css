@@ -129,6 +129,37 @@ html {
 .role {
   font-size: 30px;
 }
+.typing {
+  width: fit-content;
+  margin: 0 !important;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid var(--blue-color); /* The typewriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, start), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 453px;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--blue-color);
+  }
+}
+
 .intro__inf {
   margin-left: 60px;
   text-align: justify;
@@ -188,21 +219,21 @@ html {
 }
 .title-bg {
   font-size: 80px;
-    left: 0;
-    letter-spacing: 10px;
-    line-height: 0.7;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    text-transform: uppercase;
-    font-weight: 800;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-    color: rgba(255, 255, 255, 0.145);
-    z-index: -1;
+  left: 0;
+  letter-spacing: 10px;
+  line-height: 0.7;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  text-transform: uppercase;
+  font-weight: 800;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.145);
+  z-index: -1;
 }
 #about-section {
   margin-top: 42px;
@@ -588,3 +619,5 @@ experiences__list__col {
   color: white;
   text-decoration: underline;
 }
+
+

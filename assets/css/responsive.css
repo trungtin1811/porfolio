@@ -59,6 +59,7 @@
         width: 100%;
         align-self: center;
     }
+    
 
     #menu {
         display: block;
@@ -139,8 +140,23 @@
     }
     
 
-
-
+    .typing {
+        font-size: 24px;
+        margin: 0 auto !important;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: 0.15em solid var(--blue-color); /* The typewriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        letter-spacing: 0.1em; /* Adjust as needed */
+        animation: typing 3s steps(40, start), blink-caret 0.5s step-end infinite;
+      }
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
 
 
     @keyframes slideLeft {
