@@ -10,12 +10,31 @@
     <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
     <title>Welcome to TrungTin's home</title>
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+        $(window).load(function() {
+    $('#preload').delay(1000).fadeOut('fast', function() {
+        $('body').removeClass('preloading');
+    });
+    
+});
+    </script>
+<script src="app.js"></script>
 </head>
 
+<!-- Preloading -->
+
 <body>
-    <div id="main">
+    <div id="preload">
+        <div class="preload__mask"></div>
+            <svg class="tea" id="preload" width="111" height="144" viewbox="0 0 37 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M27.0819 17H3.02508C1.91076 17 1.01376 17.9059 1.0485 19.0197C1.15761 22.5177 1.49703 29.7374 2.5 34C4.07125 40.6778 7.18553 44.8868 8.44856 46.3845C8.79051 46.79 9.29799 47 9.82843 47H20.0218C20.639 47 21.2193 46.7159 21.5659 46.2052C22.6765 44.5687 25.2312 40.4282 27.5 34C28.9757 29.8188 29.084 22.4043 29.0441 18.9156C29.0319 17.8436 28.1539 17 27.0819 17Z" stroke="var(--secondary)" stroke-width="2"></path>
+            <path d="M29 23.5C29 23.5 34.5 20.5 35.5 25.4999C36.0986 28.4926 34.2033 31.5383 32 32.8713C29.4555 34.4108 28 34 28 34" stroke="var(--secondary)" stroke-width="2"></path>
+            <path id="teabag" fill="var(--secondary)" fill-rule="evenodd" clip-rule="evenodd" d="M16 25V17H14V25H12C10.3431 25 9 26.3431 9 28V34C9 35.6569 10.3431 37 12 37H18C19.6569 37 21 35.6569 21 34V28C21 26.3431 19.6569 25 18 25H16ZM11 28C11 27.4477 11.4477 27 12 27H18C18.5523 27 19 27.4477 19 28V34C19 34.5523 18.5523 35 18 35H12C11.4477 35 11 34.5523 11 34V28Z"></path>
+            <path id="steamL" d="M17 1C17 1 17 4.5 14 6.5C11 8.5 11 12 11 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="var(--secondary)"></path>
+            <path id="steamR" d="M21 6C21 6 21 8.22727 19 9.5C17 10.7727 17 13 17 13" stroke="var(--secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>    
+    </div>
+    <div id="main" class="active">
         <div class="container">
             <div id="nav">
                 <ul class="icon-menu">
@@ -82,15 +101,25 @@
                 <div class="intro__inf">
                     <h1 class="blue-text">I'M TRUNG TIN</h1>
                     <h2 class="white-text role typing">FRONT-END DEVELOPER</h2>
-                        <p class="white-text description">
+                    <p class="white-text description">
                     I am a FPT University Student oriented to be a Full-Stack Developer focused on crafting 
                     clean & user‑friendly experiences, I am passionate about building excellent software that improves the
                     lives of those around me.
                     </p>
-                    <a href="#about-section" class="more-btn white-text">
+                    <!-- <a href="#about-section" class="more-btn white-text">
                         MORE ABOUT ME
                         <i class="fas fa-angle-right"></i>
-                    </a>
+                    </a> -->
+                   <div class="wrapper">
+                       <div class="morebtn">
+                         <a href="#about-section">MORE ABOUT ME</a>
+                         <div class="morebtn__icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+                             <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
+                           </svg>
+                         </div>
+                       </div>
+                   </div>
                    
                 </div>
             </div>
@@ -338,8 +367,6 @@
                                     <p class="white-text">04/2017 - 04/2018</p>
                                 </div>
                             </li>
-
-                        
                     </ul>
                 </div>
 
