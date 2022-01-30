@@ -677,7 +677,7 @@ experiences__list__col {
 
 .morebtn a:hover + .morebtn__icon {
   border: 3px solid var(--blue-color);
-  right: 432px;
+  right: 428px;
 }
 
 /* preloading */
